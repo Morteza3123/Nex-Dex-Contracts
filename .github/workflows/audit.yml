@@ -24,7 +24,7 @@ jobs:
         run: npm --version
 
       - name: Install Dependencies
-        run: yarn
+        run: npm i --legacy-peer-deps
 
       - name: Run hardhat Test
         run: npx hardhat compile; npx hardhat test
